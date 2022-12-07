@@ -1,10 +1,7 @@
 import React from 'react'
-import { Category } from './components/Category'
+import ReactDOM from 'react-dom/client'
+import App from './App'
 
-export function App () {
-  return (
-    <h1>
-      <Category />
-    </h1>
-  )
-}
+const container = document.querySelector('#app')
+const root = ReactDOM.createRoot(container)
+root.render(<App />)
